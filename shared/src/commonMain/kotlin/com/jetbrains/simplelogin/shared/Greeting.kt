@@ -4,6 +4,9 @@ class Greeting {
     private val platform: Platform = getPlatform()
 
     fun greet(): String {
-        return "Hello, ${platform.name}!"
+        return """
+            KMM proof-of-concept
+            Running on ${platform.name}!
+        """.trimIndent()
     }
 }
